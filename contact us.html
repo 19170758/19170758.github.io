@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="content.css">	
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 55%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="title"><img src="title.png" width="638" height="136" alt=""/></div>
+<div class="topnav" align="center">
+  <a href="index.html">HOME</a>
+  <a href="teams.html">TEAMS</a>
+  <a href="career.html">CAREERS</a>
+  <a href="courses.html">COURSES</a>
+  <a href="register.html">REGISTER</a>
+  <a href="contact us.html">CONTACT US</a>
+</div>
+
+<div class="content">
+  <h1>Welcome to HBW!</h1>
+  <div>
+    <div>
+      <div></div>
+    </div>
+  </div>
+  <div>
+    <p><h2>Responsive Form</h2>
+<p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input name="firstname" type="text" required="required" id="fname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input name="lastname" type="text" required="required" id="lname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select name="country" required="required" id="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea name="subject" required="required" id="subject" style="height:200px" placeholder="Write something.."></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</p>
+  </div>
+  <div>
+    <div></div>
+  </div>
+</div>
+
+<div class="footer">
+<p style="color: #FFDAB9">PLEASE CONTACT THE FOLLOWING</p>
+ <a href="https://en-gb.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/?lang=en" class="fa fa-twitter" target="_blank"></a>
+<a href="https://uk.linkedin.com/" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost" target="_blank"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype" target="_blank"></a>
+<a href="https://www.android.com/intl/en_uk/" class="fa fa-android" target="_blank"></a>
+<a href="https://foursquare.com/" class="fa fa-foursquare" target="_blank"></a>
+<a href="https://rss.com/" class="fa fa-rss" target="_blank"></a>
+</div>
+
+</body>
+</html>
+
+
+
